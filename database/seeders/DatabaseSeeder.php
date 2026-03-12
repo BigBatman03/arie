@@ -13,17 +13,15 @@ class DatabaseSeeder extends Seeder
 {
     public function run(): void
     {
-        // 1. Wyczyść tabele (tylko raz na początku)
         DB::statement('SET FOREIGN_KEY_CHECKS=0;');
-        SseitQuestion::truncate(); // Clean up SSEIT questions
+        SseitQuestion::truncate();
         ExerciseOption::truncate();
         Exercise::truncate();
         Module::truncate();
         DB::statement('SET FOREIGN_KEY_CHECKS=1;');
 
-        // 2. Uruchom poszczególne seedery w odpowiedniej kolejności
         $this->call([
-            ModulesTableSeeder::class,      // Najpierw moduły, bo ćwiczenia muszą się do nich odwoływać
+            ModulesTableSeeder::class,
             PerceptionSeeder::class,
             UsageSeeder::class,
             UnderstandingSeeder::class,

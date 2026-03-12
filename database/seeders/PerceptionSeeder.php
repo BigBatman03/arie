@@ -26,7 +26,6 @@ class PerceptionSeeder extends Seeder
             ]);
         };
 
-        // SMUTEK
         $addPerception('photoemocje/sad1.jpg', 'Smutek', 'Złość', 'Wstręt', 'Strach');
         $addPerception('photoemocje/sad2.jpg', 'Smutek', 'Zaskoczenie', 'Radość', 'Wstręt');
         $addPerception('photoemocje/sad3.jpg', 'Smutek', 'Strach', 'Złość', 'Radość');
@@ -35,7 +34,6 @@ class PerceptionSeeder extends Seeder
         $addPerception('photoemocje/sad6.jpg', 'Smutek', 'Wstręt', 'Zaskoczenie', 'Strach');
         $addPerception('photoemocje/sad7.jpg', 'Smutek', 'Złość', 'Radość', 'Wstręt');
 
-        // RADOŚĆ
         $addPerception('photoemocje/happy1.jpg', 'Radość', 'Zaskoczenie', 'Wstręt', 'Smutek');
         $addPerception('photoemocje/happy2.jpg', 'Radość', 'Złość', 'Strach', 'Smutek');
         $addPerception('photoemocje/happy3.jpg', 'Radość', 'Zaskoczenie', 'Wstręt', 'Strach');
@@ -44,7 +42,6 @@ class PerceptionSeeder extends Seeder
         $addPerception('photoemocje/happy6.jpg', 'Radość', 'Złość', 'Smutek', 'Strach');
         $addPerception('photoemocje/happy7.jpg', 'Radość', 'Wstręt', 'Zaskoczenie', 'Złość');
 
-        // ZŁOŚĆ
         $addPerception('photoemocje/angry1.jpg', 'Złość', 'Wstręt', 'Strach', 'Smutek');
         $addPerception('photoemocje/angry2.jpg', 'Złość', 'Zaskoczenie', 'Radość', 'Wstręt');
         $addPerception('photoemocje/angry3.jpg', 'Złość', 'Strach', 'Smutek', 'Zaskoczenie');
@@ -53,19 +50,16 @@ class PerceptionSeeder extends Seeder
         $addPerception('photoemocje/angry6.jpg', 'Złość', 'Wstręt', 'Zaskoczenie', 'Smutek');
         $addPerception('photoemocje/angry7.jpg', 'Złość', 'Strach', 'Zaskoczenie', 'Radość');
 
-        // STRACH
         $addPerception('photoemocje/scared1.jpg', 'Strach', 'Zaskoczenie', 'Smutek', 'Wstręt');
         $addPerception('photoemocje/scared2.jpg', 'Strach', 'Złość', 'Zaskoczenie', 'Radość');
         $addPerception('photoemocje/scared3.jpg', 'Strach', 'Wstręt', 'Smutek', 'Złość');
         $addPerception('photoemocje/scared4.jpg', 'Strach', 'Zaskoczenie', 'Wstręt', 'Radość');
 
-        // WSTRĘT
         $addPerception('photoemocje/disgusted1.jpg', 'Wstręt', 'Złość', 'Strach', 'Smutek');
         $addPerception('photoemocje/disgusted2.jpg', 'Wstręt', 'Zaskoczenie', 'Złość', 'Strach');
         $addPerception('photoemocje/disgusted3.jpg', 'Wstręt', 'Smutek', 'Złość', 'Radość');
         $addPerception('photoemocje/disgusted4.jpg', 'Wstręt', 'Strach', 'Zaskoczenie', 'Złość');
 
-        // ZASKOCZENIE
         $addPerception('photoemocje/surprised1.jpg', 'Zaskoczenie', 'Strach', 'Radość', 'Wstręt');
         $addPerception('photoemocje/surprised2.jpg', 'Zaskoczenie', 'Radość', 'Strach', 'Złość');
         $addPerception('photoemocje/surprised3.jpg', 'Zaskoczenie', 'Złość', 'Smutek', 'Wstręt');

@@ -4,7 +4,7 @@
 
   let currentIndex = 0;
   let totalPerfect = 0;
-  let userSelections = {}; // { emotionIdx: value }
+  let userSelections = {};
 
   const els = {
     root: document.getElementById("game-root"),
@@ -68,7 +68,6 @@
       const row = document.createElement("div");
       row.className = "scale-row usage-scale-row";
 
-      // header: lewa emocja, prawa odpowiedź użytkownika
       const head = document.createElement("div");
       head.className = "usage-scale-head";
 
@@ -86,7 +85,6 @@
 
       const btnContainer = document.createElement("div");
       btnContainer.className = "scale-buttons usage-scale-buttons";
-      // zostawiamy domyślne rozjechanie (space-between) z .scale-buttons
 
       for (let i = 1; i <= 5; i++) {
         const btn = document.createElement("div");
@@ -99,7 +97,6 @@
 
       row.appendChild(btnContainer);
 
-      // NEW: legenda pod 1 i 5
       const legend = document.createElement("div");
       legend.className = "usage-scale-legend";
       legend.innerHTML = `<span>nie pomaga</span><span>pomaga</span>`;
@@ -110,7 +107,6 @@
   }
 
   function handleSelection(emotionIdx, value, container, emotionsLen) {
-    // blokada zmiany po sprawdzeniu
     if (!els.checkBtn.classList.contains("hide") && document.querySelector(".is-ideal")) return;
 
     const buttons = container.querySelectorAll(".scale-btn");
@@ -141,7 +137,6 @@
       const row = rows[idx];
       const buttons = row.querySelectorAll(".scale-btn");
 
-      // oznacz user + ideal
       const distance = Math.abs(userVal - ideal);
       const ok = distance <= 1;
       if (ok) correctCount++;

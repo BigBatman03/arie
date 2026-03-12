@@ -14,7 +14,6 @@ class ModulesTableSeeder extends Seeder
             ['id' => 2, 'slug' => 'usage', 'name' => 'Wykorzystanie emocji'],
             ['id' => 3, 'slug' => 'understanding', 'name' => 'Rozumienie emocji'],
             ['id' => 4, 'slug' => 'management', 'name' => 'Zarządzanie emocjami'],
-            // SSEIT moved to own table, removed from modules
         ];
 
         foreach ($modules as $m) {

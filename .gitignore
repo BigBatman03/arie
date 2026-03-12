@@ -1,0 +1,42 @@
+# Environment / secrets
+.env
+.env.*
+!.env.example
+/auth.json
+
+# Dependencies
+/vendor/
+/node_modules/
+
+# Build artifacts
+/public/build/
+/public/hot
+/public/mix-manifest.json
+/public/storage
+
+# Storage / cache / logs
+/storage/*.key
+/storage/app/public/
+/storage/framework/cache/
+/storage/framework/sessions/
+/storage/framework/testing/
+/storage/framework/views/
+/storage/logs/
+/bootstrap/cache/*.php
+*.log
+
+# Local databases / dumps
+*.sqlite
+*.sqlite3
+database.sql
+database_seed.sql
+*.sql
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
